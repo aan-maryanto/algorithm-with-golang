@@ -1,6 +1,6 @@
-package main
+package reverse_int
 
-func reverseInt(n int) int {
+func ReverseInt(n int) int {
 	var reverse int
 	for n != 0 {
 		remain := n % 10
@@ -8,8 +8,4 @@ func reverseInt(n int) int {
 		n = n / 10
 	}
 	return reverse
-}
-
-func main() {
-	println(reverseInt(123))
 }
